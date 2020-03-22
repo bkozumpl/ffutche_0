@@ -1,0 +1,191 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+/*top navigation*/
+.topnav {
+  background-color:black;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: dimgrey;
+}
+
+
+.topnav a.active {
+  background-color:olive;
+  color: white;
+}
+
+/*top area*/
+.heading {
+	margin-right: auto;
+}
+
+h2 {
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	text-align:center;
+}
+.hero-text h4 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 100px;
+}
+.hero-text button {
+	width: 50%;
+	height: 60px;
+	font-size: 15px;
+}
+
+/*hero image*/
+.hero-image img {
+width: 100%;
+	
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+	text-align:center;
+	position:absolute;
+	top:20%;
+	left: 45%;
+	color: white;
+}
+
+/*form link*/
+
+.formlink {
+	padding: 16px;
+
+}
+
+/*tab content*/
+.tab {
+  overflow: hidden;
+  background-color: inherit;
+	padding: inherit;
+}
+.tab button {
+font-family: "flavors";
+  background-color: inherit;
+  float:inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 30px;
+	padding: 35px 50px;
+  transition: 0.3s;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+
+
+.tab button.active {
+	border:dotted;
+  background-color: #8AA55A;
+
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/*registration form*/
+.container {
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/*registration button*/
+.registerbutton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbutton:hover {
+  opacity: 1;
+}
+/*column cards*/
+.column {
+  float: left;
+height: auto;
+  width: 25%;
+  padding: 0 10px;
+}
+.row {margin: 0 -5px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #0FFF88;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+/*footer*/
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
