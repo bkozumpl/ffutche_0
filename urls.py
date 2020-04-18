@@ -1,11 +1,9 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-from django.urls import path
 
-from . import views
+from django.contrib import admin
+from django.urls import path, include
+from django.conf.urls import url
 
 urlpatterns = [
-    path('ffutche/', views.index, name='index')
+path('admin/', admin.site.urls),
+path('', include('backend.urls'))
 ]
-
-
