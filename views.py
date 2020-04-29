@@ -25,11 +25,9 @@ class Tuition_FeesView(viewsets.ModelViewSet):
     queryset = Tuition_Fees.objects.all()
     serializer_class = Tuition_FeesSerializer
 
-def index(request):
-    return render(request, 'index.html')
+
 
 def donorform(request):
-    return render(request, 'donorform.html')
+    return render(request, 'backend/donorform.html')
 
-def register(request):
-    return render(request, 'register.html')
+
